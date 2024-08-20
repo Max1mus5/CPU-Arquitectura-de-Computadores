@@ -35,7 +35,7 @@ Sigue estos sencillos pasos para compilar tu código MUX en Verilog:
    cd techbench
    ```
 
-2. **Compila tu archivo de testbench** (`MUX_tb.v`) junto con el módulo MUX (`../MUX.v`):
+2. **Compila el archivo de testbench** (`MUX_tb.v`) junto con el módulo MUX (`../MUX.v`):
    ```bash
    iverilog -o MUX_tb MUX_tb.v ../MUX.v
    ```
@@ -45,7 +45,18 @@ Sigue estos sencillos pasos para compilar tu código MUX en Verilog:
    vvp MUX_tb
    ```
 
+4. **Ver las señales en GTKWave**:
+   ```bash
+   gtkwave cpu_tb.vcd
+   ```
+   o si bien quieres ver las señales de un archivo en especifico
+   ```bash
+   gtkwave (*ruta del archivo*)
+   ```
+
 ✨ **¡Y listo!** Si todo salió bien, tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
+
+
 
 ---
 
