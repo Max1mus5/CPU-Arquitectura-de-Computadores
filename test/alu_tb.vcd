@@ -1,0 +1,66 @@
+$date
+	Tue Aug 20 11:52:33 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! zero $end
+$var wire 32 " result [31:0] $end
+$var reg 32 # a [31:0] $end
+$var reg 32 $ b [31:0] $end
+$var reg 3 % op [2:0] $end
+$scope module uut $end
+$var wire 32 & a [31:0] $end
+$var wire 32 ' b [31:0] $end
+$var wire 3 ( op [2:0] $end
+$var wire 1 ! zero $end
+$var reg 32 ) result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b11111111111111111111111111111111 )
+b0 (
+b1011010010110100101101001011010 '
+b10100101101001011010010110100101 &
+b0 %
+b1011010010110100101101001011010 $
+b10100101101001011010010110100101 #
+b11111111111111111111111111111111 "
+0!
+$end
+#10
+b1001011010010110100101101001011 "
+b1001011010010110100101101001011 )
+b1 %
+b1 (
+#20
+1!
+b0 "
+b0 )
+b10 %
+b10 (
+#30
+0!
+b11111111111111111111111111111111 "
+b11111111111111111111111111111111 )
+b11 %
+b11 (
+#40
+b100 %
+b100 (
+#50
+1!
+b0 "
+b0 )
+b101 %
+b101 (
+#60
