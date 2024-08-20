@@ -82,7 +82,8 @@ Para configurar tu entorno de desarrollo y trabajar con Verilog, te recomiendo l
 - **Icarus Verilog**: [Guía y descarga](https://bleyer.org/icarus/) 📘
 - **MSYS2**: [Instalación y configuración](https://www.msys2.org/) 💻
 - **GTKWave**: [Página oficial](https://gtkwave.sourceforge.net/) 🌐
-
+- **Extension Recomendadas:**
+<img src="./assets/Extensions.png">
 ---
 
 
