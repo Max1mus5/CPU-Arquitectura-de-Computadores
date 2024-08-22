@@ -30,24 +30,44 @@ La ALU de este proyecto es de 32 bits.
 
 Sigue estos sencillos pasos para compilar tu código MUX en Verilog:
 
-1. **Navega al directorio `testbench`**:
-   ```bash
-   cd techbench
+<!-- decora a forma de nota el siguiente comando :
+cd "C:\Users\JERON\OneDrive\Documents\Arquitectura de Computadores\test"
+>> iverilog -o ../build/RegisterFile_tb RegisterFile_tb.v ../components/RegisterFile.v
+>> vvp ../build/RegisterFile_tb
+>> gtkwave ../view/registerfile_tb.vcd
+>>
+ -->
+
+ **Super Comando**
+```bash
+cd .\test\
+iverilog -o ../build/{nombre archivo compilado} {archivo testbench}.v ../components/{archivo creador de entidad}
+cd ..\view\
+vvp ../build/{archivo compilado del testbench}
+gtkwave .\{archivo con las señales}
    ```
 
-2. **Compila el archivo de testbench** (`MUX_tb.v`) junto con el módulo MUX (`../MUX.v`):
+> *Si no quieres usar el super comando puedes utilizar paso por paso:*
+
+1. **Navega al directorio `testbench`**:
    ```bash
-   iverilog -o MUX_tb MUX_tb.v ../MUX.v
+   cd test
+   ```
+
+2. **Compila el archivo de testbench**  junto con el módulo:
+   ```bash
+   iverilog -o ../build/{nombre archivo compilado} {archivo testbench}.v ../components/{archivo modulo}
    ```
 
 3. **Ejecuta la simulación**:
    ```bash
-   vvp MUX_tb
+   cd ..\view\
+   vvp ../build/{archivo compilado del testbench}
    ```
 
 4. **Ver las señales en GTKWave**:
    ```bash
-   gtkwave cpu_tb.vcd
+   gtkwave .\{archivo con las señales}
    ```
    o si bien quieres ver las señales de un archivo en especifico
    ```bash
@@ -66,7 +86,7 @@ Para hacer tu análisis más visual y entender mejor el comportamiento de tu dis
 
 1. **Abre GTKWave**:
    ```bash
-   gtkwave cpu_tb.vcd
+   gtkwave (*ruta del archivo*)
    ```
 
 2. **Explora las señales**:
