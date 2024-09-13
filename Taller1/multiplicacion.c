@@ -10,5 +10,9 @@ int main(){
   for(int i = 0; i < numero2; i++){//addi x19, x19, 0
     suma+=numero1;
   }//blt x19, x9, for
-        printf("El resultado de la multiplicacion es: %d\n", suma);
+  printf("El resultado de la multiplicacion es: %d\n", suma);
+
+  return 0;
+
+    
 }
