@@ -19,6 +19,3 @@ addi x19, x19, 1
 blt x19, x9, for
 
 endfor:
-
-add x10, 
-
