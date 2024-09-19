@@ -25,7 +25,7 @@ void orgvector(int vector[], int n) {
   // validar que n sea menor o igual al tamaño del vector
   int vectorSize = sizeof(vector[0]) * n / sizeof(int); 
   if (n > vectorSize) {
-    printf("El tamaño del vector es mayor que el n: %i", n, "\n");
+    printf("El tamaño del vector es mayor que el n:  %i", n, "\n");
     return;
   }
   for (int numeroActual = 0; numeroActual < n - 1; numeroActual++) {
