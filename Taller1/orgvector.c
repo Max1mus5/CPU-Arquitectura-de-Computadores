@@ -25,15 +25,15 @@ void orgvector(int vector[], int n) {
   // validar que n sea menor o igual al tamaño del vector
   int vectorSize = sizeof(vector[0]) * n / sizeof(int); 
   if (n > vectorSize) {
-    printf("El tamaño del vector es mayor que el n:  %i", n, "\n");
+    printf("El tamaño del vector es mayor que el n: %i\n", n);
     return;
   }
   for (int numeroActual = 0; numeroActual < n - 1; numeroActual++) {
-    for (int numeroSiguiente = 0; numeroSiguiente < n - numeroActual - 1; numeroSiguiente++) {
-      if (vector[numeroSiguiente] > vector[numeroSiguiente + 1]) {
-        int intercambioActual = vector[numeroSiguiente];
-        vector[numeroSiguiente] = vector[numeroSiguiente + 1];
-        vector[numeroSiguiente + 1] = intercambioActual;
+    for (int numeroSiguiente = numeroActual + 1; numeroSiguiente < n; numeroSiguiente++) {
+      if (vector[numeroActual] > vector[numeroSiguiente]) {
+        int intercambioActual = vector[numeroActual];
+        vector[numeroActual] = vector[numeroSiguiente];
+        vector[numeroSiguiente] = intercambioActual;
       }
     }
   }
