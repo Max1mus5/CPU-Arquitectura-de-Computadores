@@ -1,17 +1,8 @@
-.data
-vector:   .word 2, 1, 4, 3, 5   
-    .text
-    .globl main
-    .globl orgvector
 
-# Salto inmediato al inicio del programa
-beq x0, x0, main
-
-main:
-    la x10, vector                 
-    li x11, 5                      
-    jal x1, orgvector              
-    jal x0, fin                  
+addi x10, x0, vec-direction                 # Cargar la dirección base del vector en x10
+addi x11, x0, 5                      # Cargar el valor 5 (tamaño del vector) en x11
+jal x1, orgvector              
+jal x0, fin                  
 
 orgvector:
 addi sp, sp, -12
