@@ -8,12 +8,13 @@ void orgvector(int vector[], int n);
 int main() {
   // definir vector
   int vector[5] = {2, 1, 4, 3, 5};
-  int n = sizeof(vector) / sizeof(vector[0]);
+  int n =5  ;
+  int size = sizeof(vector) / sizeof(vector[0]);
 
   // llamado a la funcion orgvector
   orgvector(vector, n);  
   printf("El vector ordenado es: ");
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i < size; i++) {
     printf("%d ", vector[i]);
   }
   printf("\n");
@@ -21,21 +22,19 @@ int main() {
 }
 
 void orgvector(int vector[], int n) {
-  int numeroActual, numeroSiguiente, intercambioActual;
-  // validar que n sea menor o igual al tamaño del vector
-  int vectorSize = sizeof(vector[0]) * n / sizeof(int); 
-  if (n > vectorSize) {
-    printf("El tamaño del vector es mayor que el n: %i\n", n);
-    return;
-  }
-  for (int numeroActual = 0; numeroActual < n - 1; numeroActual++) {
-    for (int numeroSiguiente = numeroActual + 1; numeroSiguiente < n; numeroSiguiente++) {
-      if (vector[numeroActual] > vector[numeroSiguiente]) {
+  int numeroActual = 0;
+  int numeroSiguiente = numeroActual + 1;
+  while(n > 0){
+    while(numeroSiguiente < n){
+      if(vector[numeroActual] > vector[numeroSiguiente]){
         int intercambioActual = vector[numeroActual];
         vector[numeroActual] = vector[numeroSiguiente];
         vector[numeroSiguiente] = intercambioActual;
       }
+      numeroSiguiente++;
     }
+    numeroActual++;
+    n--;
   }
   // metodo: ordenamiento por intercambio (bubble sort)
   // complejidad algoritmica: O(n^2), complejidad en memoria: O(1)
