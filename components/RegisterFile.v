@@ -13,21 +13,21 @@ module RegisterFile(
     // Definición de 32 registros de 32 bits
     reg [31:0] registers [31:0];
 
-    // Leer datos de los registros (Lectura sincrónica)
-    assign readData1 = registers[readReg1];
-    assign readData2 = registers[readReg2];
-      integer i;
+    // Leer datos de los registros (Lectura asincrónica)
+    assign readData1 = (readReg1 == 5'b0) ? 32'b0 : registers[readReg1];
+    assign readData2 = (readReg2 == 5'b0) ? 32'b0 : registers[readReg2];
+
+    integer i;
 
     // Escribir datos en un registro (Escritura sincrónica)
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             // Reiniciar todos los registros a 0
-            
-            for (i = 0; i < 32; i = i + 1) begin
+            for (i = 1; i < 32; i = i + 1) begin
                 registers[i] <= 32'b0;
             end
-        end else if (regWrite) begin
-            // Escribir en el registro seleccionado
+        end else if (regWrite && writeReg != 5'b0) begin
+            // Escribir en el registro seleccionado, excepto en x0
             registers[writeReg] <= writeData;
         end
     end
