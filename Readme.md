@@ -1,7 +1,7 @@
 
 # 💻 Proyecto Arquitectura de Computadores
 
-Para este curos se ha propuesto diseñar y entender como funciona una CPU, el corazon de una computadora, se estara documentando el proceso y los componentes que se estaran utilizando para la creacion de la CPU a medida que se avance en el curso.
+Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v I32
 
 ## Contenido
 
