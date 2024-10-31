@@ -1,0 +1,116 @@
+$date
+	Thu Oct 31 01:47:49 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module RegisterUnit_tb $end
+$var wire 32 ! dataOut2 [31:0] $end
+$var wire 32 " dataOut1 [31:0] $end
+$var reg 1 # clk $end
+$var reg 32 $ dataIn [31:0] $end
+$var reg 5 % readRegister1 [4:0] $end
+$var reg 5 & readRegister2 [4:0] $end
+$var reg 1 ' writeEnable $end
+$var reg 5 ( writeRegister [4:0] $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 32 ) dataIn [31:0] $end
+$var wire 32 * dataOut1 [31:0] $end
+$var wire 32 + dataOut2 [31:0] $end
+$var wire 5 , readRegister1 [4:0] $end
+$var wire 5 - readRegister2 [4:0] $end
+$var wire 1 ' writeEnable $end
+$var wire 5 . writeRegister [4:0] $end
+$var parameter 32 / BITS_PER_REGISTER $end
+$var parameter 32 0 MAX_REGISTERS $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 1 i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 0
+b100000 /
+$end
+#0
+$dumpvars
+b100000 1
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+b0 $
+0#
+b0 "
+b0 !
+$end
+#5000
+1#
+#10000
+0#
+b10000000000 "
+b10000000000 *
+b10 %
+b10 ,
+#15000
+1#
+b1111011 $
+b1111011 )
+b11 (
+b11 .
+1'
+#20000
+0#
+#25000
+1#
+b1111011 "
+b1111011 *
+b11 %
+b11 ,
+0'
+#30000
+0#
+b111001000 $
+b111001000 )
+b100 (
+b100 .
+1'
+#35000
+1#
+#40000
+0#
+b111001000 !
+b111001000 +
+b100 &
+b100 -
+0'
+#45000
+1#
+b1111100111 $
+b1111100111 )
+b0 (
+b0 .
+1'
+#50000
+0#
+#55000
+1#
+b0 "
+b0 *
+b0 %
+b0 ,
+0'
+#60000
+0#
