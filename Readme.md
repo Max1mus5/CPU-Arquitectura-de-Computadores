@@ -1,9 +1,7 @@
 
 # 💻 Proyecto Arquitectura de Computadores
 
-Para este curos se ha propuesto diseñar y entender como funciona una CPU, el corazon de una computadora, se estara documentando el proceso y los componentes que se estaran utilizando para la creacion de la CPU a medida que se avance en el curso.
-
-<!-- quiero dar un estilo de linea de tiempo verticalemnte la primera parte seran dos secciones de MUX y ALU -->
+Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v I32
 
 ## Contenido
 
@@ -29,14 +27,6 @@ La ALU de este proyecto es de 32 bits.
 ## 🚀 Compilando el Código
 
 Sigue estos sencillos pasos para compilar tu código MUX en Verilog:
-
-<!-- decora a forma de nota el siguiente comando :
-cd "C:\Users\JERON\OneDrive\Documents\Arquitectura de Computadores\test"
->> iverilog -o ../build/RegisterFile_tb RegisterFile_tb.v ../components/RegisterFile.v
->> vvp ../build/RegisterFile_tb
->> gtkwave ../view/registerfile_tb.vcd
->>
- -->
 
  **Super Comando**
 ```bash
