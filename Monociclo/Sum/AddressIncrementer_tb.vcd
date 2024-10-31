@@ -1,0 +1,53 @@
+$date
+	Thu Oct 31 01:13:53 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module AddressIncrementer_tb $end
+$var wire 32 ! incrementedAddress [31:0] $end
+$var parameter 32 " ADDR_WIDTH $end
+$var reg 32 # currentAddress [31:0] $end
+$scope module uut $end
+$var wire 32 $ currentAddress [31:0] $end
+$var parameter 32 % ADDR_WIDTH $end
+$var reg 32 & incrementedAddress [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 %
+b100000 "
+$end
+#0
+$dumpvars
+b100 &
+b0 $
+b0 #
+b100 !
+$end
+#10000
+b1000 !
+b1000 &
+b100 #
+b100 $
+#20000
+b1100 !
+b1100 &
+b1000 #
+b1000 $
+#30000
+b10100 !
+b10100 &
+b10000 #
+b10000 $
+#40000
+b10000000000000000 !
+b10000000000000000 &
+b1111111111111100 #
+b1111111111111100 $
+#50000
