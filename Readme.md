@@ -45,24 +45,17 @@ gtkwave .\{archivo con las señales}
    ```
 
 2. **Compila el archivo de testbench**  junto con el módulo:
-   ```bash
-   iverilog -o ../build/{nombre archivo compilado} {archivo testbench}.v ../components/{archivo modulo}
+   ```systemVerilog
+   iverilog -g2012 -o pc_testbench .\testPC.sv .\pc.sv
    ```
 
 3. **Ejecuta la simulación**:
    ```bash
-   cd ..\view\
-   vvp ../build/{archivo compilado del testbench}
+      vvp .\pc_testbench
    ```
 
-4. **Ver las señales en GTKWave**:
-   ```bash
-   gtkwave .\{archivo con las señales}
-   ```
-   o si bien quieres ver las señales de un archivo en especifico
-   ```bash
-   gtkwave (*ruta del archivo*)
-   ```
+4. **Ver las señales en WaveTrace**:
+   Abres El archivo
 
 ✨ **¡Y listo!** Si todo salió bien, tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
 

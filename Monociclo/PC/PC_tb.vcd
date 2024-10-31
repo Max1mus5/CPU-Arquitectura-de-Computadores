@@ -1,0 +1,75 @@
+$date
+	Thu Oct 31 00:07:22 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module PC_tb $end
+$var wire 32 ! newAddress [31:0] $end
+$var parameter 32 " MAXBITSPERREGISTER $end
+$var parameter 32 # NEWADDRESSLENGTH $end
+$var reg 32 $ address [31:0] $end
+$var reg 1 % clk $end
+$scope module uut $end
+$var wire 32 & address [31:0] $end
+$var wire 1 % clk $end
+$var parameter 32 ' MAXBITSPERREGISTER $end
+$var parameter 32 ( NEWADDRESSLENGTH $end
+$var reg 32 ) newAddress [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 (
+b100000 '
+b100000 #
+b100000 "
+$end
+#0
+$dumpvars
+b0 )
+b0 &
+0%
+b0 $
+b0 !
+$end
+#5000
+1%
+#10000
+0%
+b100 $
+b100 &
+#15000
+b100 !
+b100 )
+1%
+#20000
+0%
+b1000 $
+b1000 &
+#25000
+b1000 !
+b1000 )
+1%
+#30000
+0%
+b1100 $
+b1100 &
+#35000
+b1100 !
+b1100 )
+1%
+#40000
+0%
+b10000 $
+b10000 &
+#45000
+b10000 !
+b10000 )
+1%
+#50000
+0%
