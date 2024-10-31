@@ -1,0 +1,59 @@
+$date
+	Thu Oct 31 00:50:22 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module InstructionMemory_tb $end
+$var wire 32 ! OutputInstruction [31:0] $end
+$var parameter 32 " INST_MAX_LENGTH $end
+$var parameter 32 # REG_MAX_LENGTH $end
+$var reg 32 $ Address [31:0] $end
+$scope module uut $end
+$var wire 32 % Address [31:0] $end
+$var parameter 32 & INST_MAX_LENGTH $end
+$var parameter 32 ' REG_MAX_LENGTH $end
+$var parameter 32 ( REG_MAX_NUMBER $end
+$var reg 32 ) OutputInstruction [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000000000 (
+b100000 '
+b100000 &
+b100000 #
+b100000 "
+$end
+#0
+$dumpvars
+b1001100011 )
+b0 %
+b0 $
+b1001100011 !
+$end
+#30000
+b10000010011 !
+b10000010011 )
+b100 $
+b100 %
+#50000
+b10100000000001010010011 !
+b10100000000001010010011 )
+b1000 $
+b1000 %
+#70000
+b10101000010000000100011 !
+b10101000010000000100011 )
+b1100 $
+b1100 %
+#90000
+b10000000000001010010011 !
+b10000000000001010010011 )
+b10000 $
+b10000 %
+#110000
