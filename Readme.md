@@ -1,7 +1,7 @@
 
 # 💻 Proyecto Arquitectura de Computadores
 
-Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v I32
+Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v
 ---
 
 ## 🚀 Compilando el Código
@@ -38,9 +38,6 @@ gtkwave .\{archivo con las señales}
    Abres El archivo
 
 ✨ **¡Y listo!** Si todo salió bien, tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
-
-
-
 ---
 
 ## 📊 Visualiza las Señales en GTKWave
