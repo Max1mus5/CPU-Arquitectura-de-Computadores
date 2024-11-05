@@ -1,27 +1,7 @@
 
 # 💻 Proyecto Arquitectura de Computadores
 
-Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v I32
-
-## Contenido
-
-- [MUX](#mux)
-- [ALU](#alu)
-
-## MUX
-
-Un multiplexor o MUX es un circuito digital que tiene múltiples entradas y una sola salida. 
-Se utiliza para seleccionar una de las múltiples entradas y enviarla a la salida. 
-El número de entradas es una potencia de 2
-Este MUX es de 2 a 1, de 32 bits.
-
-
-## ALU
-
-La unidad aritmético-lógica o ALU (Arithmetic Logic Unit) es un circuito digital que realiza operaciones aritméticas y lógicas en los datos.
-La ALU toma dos entradas y una señal de control para realizar una operación específica.
-La ALU de este proyecto es de 32 bits.
-
+Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v
 ---
 
 ## 🚀 Compilando el Código
@@ -58,9 +38,6 @@ gtkwave .\{archivo con las señales}
    Abres El archivo
 
 ✨ **¡Y listo!** Si todo salió bien, tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
-
-
-
 ---
 
 ## 📊 Visualiza las Señales en GTKWave
