@@ -19,7 +19,7 @@ module ArithmeticLogicUnit (
             
             // Shift Operations
             4'b0001: result = operandA << operandB;                   // Logical left shift
-            4'b0105: result = operandA >> operandB;                   // Logical right shift
+            4'b0101: result = operandA >> operandB;                   // Logical right shift (fixed from 0105)
             4'b1101: result = operandA >>> operandB;                  // Arithmetic right shift
             4'b0010: result = $signed(operandA) << $signed(operandB); // Arithmetic left shift
             
