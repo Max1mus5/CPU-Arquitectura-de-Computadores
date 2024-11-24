@@ -65,6 +65,4 @@ Para configurar tu entorno de desarrollo y trabajar con Verilog, te recomiendo l
 - **Extension Recomendadas:**
 <img src="./assets/Extensions.png">
 ---
-
-
-**JERONIMO RIVEROS**
+**JERONIMO RIVEROS PEREA**
