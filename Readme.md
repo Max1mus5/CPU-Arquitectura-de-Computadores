@@ -37,7 +37,7 @@ gtkwave .\{archivo con las señales}
 4. **Ver las señales en WaveTrace**:
    Abres El archivo
 
-✨ **¡Y listo!** Si todo salió bien, tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
+La tu simulación se ejecutará, generando un archivo `.vcd` con las señales de entrada y salida.
 ---
 
 ## 📊 Visualiza las Señales en GTKWave
@@ -65,6 +65,4 @@ Para configurar tu entorno de desarrollo y trabajar con Verilog, te recomiendo l
 - **Extension Recomendadas:**
 <img src="./assets/Extensions.png">
 ---
-
-
-**JERONIMO RIVEROS**
+**JERONIMO RIVEROS PEREA**
