@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at control_unit.sv(17): always construct contains both blocking and non-blocking assignments File: D:/intelQuartusInstall/projects/riscv_segmentation/modules/control_unit.sv Line: 17
