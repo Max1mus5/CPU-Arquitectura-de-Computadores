@@ -1,7 +1,6 @@
 
 # 💻 Proyecto Arquitectura de Computadores
 
-Para este curos se ha propuesto diseñar y entender como funciona a profundidad el monociclo dentro del marco de arquitectura de RISC-v
 ---
 
 ## 🚀 Compilando el Código
